@@ -1,0 +1,32 @@
+<!Doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>늘어나는 메뉴창</title>
+  <style>
+    body{
+      background-color: black;
+      transition:all 1s;
+    }
+    div{
+      background-color: black;
+      color:white;
+      padding:10px;
+      width:100px;
+      height:50px;
+      transition: height 1s;
+    }
+    div:hover{
+      height:400px;
+    }
+  </style>
+</head>
+<!--body 부분 background color를 onload(로딩이 끝났을 때)white로 전환하는 JS code-->
+<body onload="document.querySelector('body').style.backgroundColor='white';">
+<div>
+  TRANSITION
+</div>
+</body>
+</html>
+
+<!--참고 사이트 : https://opentutorials.org/course/2418/13691-->

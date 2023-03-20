@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>인라인 블럭</title>
+</head>
+<!--div{width}를 주면 border값에 따라 박스의 크기가 달라져 버린다.(흰 부분의 width만 조절하기 때문)-->
+<!--그러나 *로 모든 객체에게 box-sizing : border 주면 border를 포함한 width값으로 직관적으로 작업할수 있다.-->
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    div {
+        margin: 10px;
+        width: 150px;
+    }
+
+    #small {
+        border: 10px solid black;
+    }
+
+    #large {
+        border: 30px solid black;
+    }
+</style>
+<body>
+    <div id="small">Hello</div>
+    <div id="large">Hello</div>
+</body>
+</html>

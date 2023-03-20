@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>라디오박스_체크박스</title>
+</head>
+<body>
+<!-- name값이 같은것들끼리 그룹핑 되며 같은 그룹안에서는 하나만 선택 가능하다.-->
+<form action="Http://localhost:8080/order.jsp">
+    <p>
+    <h4>색상 단일 선택하기</h4>
+    빨간색<input type="radio" name="color" value="red" checked>
+    파란색<input type="radio" name="color" value="blue">
+    노란색<input type="radio" name="color" value="yellow">
+    </p>
+    <p>
+    <h4>사이즈 다중 선택하기</h4>
+    95<input type="checkbox" name="size" value="95"checked>
+    100<input type="checkbox" name="size" value="100">
+    105<input type="checkbox" name="size" value="105"checked>
+    </p>
+    <input type="submit">
+</form>
+</body>
+</html>

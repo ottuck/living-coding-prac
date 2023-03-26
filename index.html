@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="">
 <head>
-    <!-- Google tag (gtag.js) -->
+    <!-- 구글 애널리스트 API -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HN8FWN6YMV"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -16,47 +16,69 @@
     </script>
     <meta charset="UTF-8">
     <title>생활코딩 WEB1 Project</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size:45px;
+            text-align:center;
+            border-bottom:1px solid gray;
+            margin:0;
+            padding: 20px;
+        }
+        nav{
+            border-right: 1px solid gray;
+            width: 100px;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
 <header>
-    <h2>👋안녕하세요.</h2>
-    <h3>이곳은 생활코딩 WEB1을 보고 만드는 실습 홈페이지입니다.</h3>
+    <h1>WEB1</h1>
 </header>
-<article>
-    본 페이지는 HTML과 CSS, JavaScript 수업의 실습 페이지이며<br>
-    Disqus, Tawk API를 이용한 댓글, 채팅기능과 Gitpages를 이용한 배포, Google Analytics를 이용한 통계 기능을 추가 하였습니다.<br><br>
-</article>
 <nav>
     <a href="HTML.html">HTML</a><br>
     <a href="CSS.html">CSS</a><br>
     <a href="JavaScript.html">JavaScript</a><br>
 </nav>
-<a href="https://blog.naver.com/vison901"><img
+<article>
+    <p><strong>👋안녕하세요.</strong>이곳은 생활코딩 WEB1을 보고 만드는 실습 홈페이지입니다. 본 페이지는 HTML&CSS수업의 실습 페이지이며<br>
+        Disqus, Tawk API를 이용한 댓글, 채팅기능과 Gitpages를 이용한 배포, Google Analytics를 이용한 통계 기능을 추가 하였습니다.</p>
+    <a href="https://blog.naver.com/vison901"><img
         src="https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1072&q=80"
-        alt="제 블로그로 이동합니다:)" width="50%"></a>
-<div id="disqus_thread"></div>
-<script>
-    /**
-     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function () { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = 'https://livingcoding.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<!--Start of Tawk.to Script-->
+        alt="제 블로그로 이동합니다:)" width="30%"></a>
+</article>
+
+<!-- 라이브리 시티 설치 코드 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC81ODE0NC8zNDYwNw==">
+    <script type="text/javascript">
+        (function(d, s) {
+            let j, e = d.getElementsByTagName(s)[0];
+
+            if (typeof LivereTower === 'function') { return; }
+
+            j = d.createElement(s);
+            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+            j.async = true;
+
+            e.parentNode.insertBefore(j, e);
+        })(document, 'script');
+    </script>
+    <noscript>라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+</div>
+
+<!-- 시티 설치 코드 끝 -->
+<!--1:1 문의 대화를 위한 Tawk API-->
 <script type="text/javascript">
-    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    let Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
     (function () {
-        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        let s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
         s1.async = true;
         s1.src = 'https://embed.tawk.to/6407182331ebfa0fe7f123fa/1gqtrcirb';
         s1.charset = 'UTF-8';

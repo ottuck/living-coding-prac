@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>홀리그레일 with 플롯트</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            width: 540px;
+            border: 1px solid gray;
+            margin: auto;
+            /*margin을 auto로 줘서 전체적인 body내용을 화면 가운데로 가져온다*/
+        }
+        header{
+            border-bottom: 1px solid gray;
+        }
+        nav {
+            float: left;
+            width: 120px;
+            border-right: 1px solid gray;
+        }
+        article{
+            float: left;
+            width: 300px;
+            border-left: 1px solid gray;
+            border-right: 1px solid gray;
+            margin-left: -1px;
+            /*margin으로 -1px을 주는건 겹치는 부분의 선이 중복 적용되지 않게 하기위한 잡기이다.*/
+        }
+        aside{
+            float: left;
+            width: 120px;
+            border-left: 1px solid gray;
+            margin-left: -1px;
+        }
+        footer{
+            clear: both;
+            /*clear는 float의 효과를 안받게 할때 쓰이는 태그*/
+            border-top:1px solid gray;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>
+            CSS
+        </h1>
+    </header>
+    <nav>
+        <ul>
+            <li>position</li>
+            <li>float</li>
+            <li>flex</li>
+        </ul>
+    </nav>
+    <article>
+        <h2>
+            float
+        </h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi aperiam autem blanditiis corporis id
+        laudantium minima minus nostrum provident quae, tenetur! Ab adipisci animi assumenda deserunt earum
+        exercitationem impedit, ipsum obcaecati quaerat quidem quod voluptates? Accusamus eum inventore minus pariatur
+        ut. Accusamus, ad architecto deserunt dignissimos doloremque fuga in maxime, nemo neque perferendis porro qui
+        reiciendis sapiente. Facere harum iusto non odit quis tempore voluptate? Ad ducimus eaque eius ipsam iste, odit
+        omnis optio quasi tempore veritatis. Doloremque ducimus eos et fuga fugit iure sit tempore voluptatibus? Eius
+        explicabo laudantium numquam? Culpa eaque hic id libero magni quaerat ratione?
+    </article>
+    <aside>
+        ad
+    </aside>
+    <footer>
+        copyleft
+    </footer>
+</body>
+</div>
+
+</html>

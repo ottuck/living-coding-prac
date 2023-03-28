@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @media (max-width:600px){
+            body{
+                background-color: green;
+            }
+        }
+        @media (max-width:500px){
+            body{
+                background-color: red;
+                /*최소값일때의 body색상 변경을 위해, css캐스캐이딩 적용을 받도록 아래에 선언했다*/
+            }
+        }
+        @media (min-width:601px){
+            body{
+                background-color: blue;
+            }
+        }
+    </style>
+    <title>미디어쿼리와 캐스캐이딩</title>
+</head>
+<body>
+<ul>
+    <li>~500px : red</li>
+    <li>501~600px : green</li>
+    <li>601px~ : blue</li>
+</ul>
+
+
+
+</body>
+</html>

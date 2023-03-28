@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Holi Grail Layout</title>
+</head>
+<style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /*body 자체에 flex속성을 준 후 안에 위치한 모든 내용들을 center로 정렬시킨다*/
+        /*jsetify는 행(row)의 넓이를 조절한다*/
+        border: 1px solid grey;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        border-bottom: 1px solid grey;
+        padding-left: 20px;
+    }
+    footer {
+        border-top: 1px solid grey;
+        padding: 20px;
+        text-align: center;
+    }
+    .content {
+        display: flex;
+    }
+    .content nav {
+        border-right: 1px solid grey;
+    }
+    aside {
+        border-left: 1px solid grey;
+    }
+    nav, aside {
+        flex-basis: 150px;
+        flex-shrink: 0;
+    }
+    main {
+        padding: 10px;
+    }
+</style>
+<body>
+<div class="container">
+    <header>
+        <h1>생활코딩</h1>
+    </header>
+    <section class="content">
+        <nav>
+            <ul>
+                <li>html</li>
+                <li>css</li>
+                <li>javascipt</li>
+            </ul>
+        </nav>
+        <main>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate error fuga in minus nulla officiis
+            totam ullam unde. Accusamus at cupiditate dolore eveniet fuga harum id, laborum, minus modi mollitia nam,
+            nobis quas recusandae reiciendis rem reprehenderit sequi similique! Laborum minus, repudiandae. Architecto
+            debitis dolores enim fugiat fugit labore magnam nam quia quos velit. Ab ipsam minima natus nobis odio, quas
+            quisquam voluptatum. Aliquid amet assumenda aut beatae cupiditate doloribus ea est excepturi facere, facilis
+            fugiat fugit hic incidunt ipsa labore, libero magni nobis nostrum officiis possimus quasi qui quisquam
+            ratione repellat temporibus vero voluptate voluptatum. Accusamus adipisci alias beatae debitis dolorem enim
+            error, eum eveniet explicabo illum ipsam laudantium, maxime modi mollitia necessitatibus nisi non nostrum
+            numquam obcaecati provident rem repellat, similique tempore ullam velit voluptatem voluptatibus? Blanditiis
+            culpa laboriosam veritatis! A, ad deleniti mollitia omnis quidem veniam vitae? Ad alias aliquam aliquid
+            aperiam aspernatur autem blanditiis corporis debitis, ea enim est harum illo impedit, in ipsa ipsum iste
+            itaque laborum libero magnam minus modi mollitia, officia porro quisquam repellat repellendus sint soluta
+            vel vitae. Amet animi aperiam assumenda consequatur ex facilis fugit nostrum numquam praesentium quod
+            reiciendis sapiente similique soluta unde, voluptate. Dolor dolorem doloremque dolorum eos fugit ipsum iusto
+            optio quas ratione voluptate! Amet at autem culpa et explicabo, fuga fugiat hic necessitatibus nemo quae
+            quaerat ratione reprehenderit ullam, veniam, veritatis. Ab aliquam amet aperiam assumenda autem commodi
+            consequatur corporis cupiditate delectus dignissimos distinctio dolore dolorem eos eum harum in incidunt
+            iste iure laboriosam laudantium maiores nam natus nemo nihil, nobis obcaecati officia optio perferendis quia
+            quidem quo rem similique sunt ullam voluptate voluptatem voluptates! Aliquam aspernatur aut blanditiis
+            cumque deleniti dignissimos distinctio doloremque doloribus dolorum eaque error, et harum impedit in labore
+            maiores neque nesciunt nihil nostrum porro qui quod reiciendis rem tempora tenetur vel voluptas. Cum
+            deserunt dignissimos, earum eius incidunt nostrum perspiciatis voluptates voluptatibus. Dicta dolorem in,
+            laborum mollitia quaerat ratione sint totam voluptate? Ab amet architecto consectetur, cumque deserunt dicta
+            <p>dignissimos doloremque doloribus earum eligendi error est in inventore nobis nostrum nulla, officia
+                officiis
+                omnis porro, quasi ratione rem repellendus rerum suscipit tempore temporibus ullam voluptatum.
+                Consequatur,
+                deleniti dolor dolorem eius eos maxime quasi quibusdam. Beatae blanditiis corporis distinctio, earum
+                excepturi hic mollitia quasi quo ullam? Consectetur dolorem eum illum iure magni, quas rem tempora
+                tenetur!
+                Amet consectetur consequuntur cumque debitis ex, fugit illum iusto, labore libero maiores natus
+                praesentium
+                quisquam, quos repellendus soluta suscipit ut? Ab at atque beatae cumque dolorem dolores ducimus eaque
+                excepturi harum illo in incidunt inventore iste maiores minima natus odit officia officiis omnis
+                pariatur
+                perferendis, quas quasi quibusdam quis quos rem sint sunt tempore ut veniam. Accusamus consectetur
+                eligendi
+                exercitationem fugit mollitia nostrum provident quas, quod repellat vel. Ducimus facilis itaque numquam
+                officia! Adipisci atque fuga praesentium repellendus voluptates. Accusantium ad debitis deserunt ea et
+                eum
+                harum inventore iste iure libero magnam molestias numquam officia provident repellat saepe, temporibus.
+                Assumenda at earum hic ipsa minima perferendis placeat! Delectus illo illum itaque magnam, odit
+                praesentium
+                quidem sapiente.</p>
+        </main>
+        <aside>
+            AD
+        </aside>
+    </section>
+    <footer>
+        마들로 616 디즈니랜드
+    </footer>
+</div>
+</body>
+</html>

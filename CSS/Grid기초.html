@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>그리드</title>
+    <style>
+      div{
+        border: 5px solid gray;
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        /*1fr은 화면의 남은 부분을 자동으로 쓰게 해주는 단위 기능*/
+      }
+      #gird{
+        border: 5px solid pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="gird">
+      <div>NAVIGATION</div>
+      <div>ARTICLE</div>
+    </div>
+  </body>
+</html>
